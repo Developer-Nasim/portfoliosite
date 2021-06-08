@@ -1,0 +1,348 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.hero-area .fixContents {
+	    left: -120px;
+	}
+	.fixContents {
+	    left: -70px;
+	}
+	.fixContents.right-mode { 
+	    right: -70px; 
+	}
+
+
+
+
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+	.hero-area .fixContents {
+	    top: 80%;
+	    left: 50%;
+	    position: absolute;
+	    transform: rotate(0deg) translateX(-50%);
+	}
+	.fixContents{
+		display: block;
+		text-align: center;
+	}
+	.fixContents ul li a {
+	    transform: rotate(0deg); 
+	}
+	.hero-contents {
+	    padding-left: 0;
+	    padding-top: 0px;
+	    text-align: center;
+	} 
+	.hero-wrp h1 {
+	    font-size: 52px; 
+	    margin-bottom: 20px;
+	}
+	.hero-wrp h3 { 
+	    font-size: 22px;
+	}
+	.hero-contents ul { 
+	    margin: auto;
+	    margin-bottom: 20px;
+	    width: max-content;
+	}
+	.about-wrp {
+	    padding-right: 0px;
+	    text-align: center;
+	}
+	.myimage img {
+		margin: auto;
+	    margin-bottom: 20px;
+	}
+	.fixContents {
+	    transform: rotate(0deg);
+	    position: unset;
+	    left: 0;
+	    width: max-content;
+	    margin: auto;
+	    margin-bottom: 50px;
+	}
+	.fixContents.right-mode {
+	    left: 0;
+	    right: 0;
+	    transform: rotate(0deg);
+	    margin: auto;
+	    display: block;
+	    width: max-content;
+	    margin-bottom: 50px;
+	}
+	.skils {
+	    margin-left: 0px;
+	}
+	.portfolio {
+	    margin-left: 0px;
+	}
+	.fixContents ul {
+	    display: flex;
+	    width: max-content;
+	    margin-top: 20px;
+	}
+	.hero-area .fixContents p {
+	    margin: auto;
+	}
+	.fixContents:after {
+	    content: "";
+	    position: absolute;
+	    width: 260px;
+	    height: 2px;
+	    background: white;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%,-50%);
+	}
+	.fixContents p:after{
+		display: none;
+	}
+	.fixContents p { 
+	    padding: 5px 10px; 
+	    width: 135px; 
+	    font-size: 18px;
+	    margin-right: 0; 
+	}
+	ul#pills-tab {
+	    justify-content: center;
+	}
+	.skillblk {
+	    width: 100%; 
+	}
+	.hobies{
+		justify-content: space-between;
+	}
+	.hobie-blk {
+	    width: 48%; 
+	    padding: 45px 25px;
+	    margin: 0px;  
+	    margin-bottom: 25px;
+	}
+	.portfolioBlk {
+	    width: 100%; 
+	    margin-bottom: 30px;  
+	}
+	.portfolioBlk img { 
+	    height: auto; 
+	}
+	.contact-wrp {
+	    text-align: center;
+	    padding: 0 15px;
+	    margin-bottom: 50px;
+	}
+	.contactLists {
+	    text-align: center;
+	}
+	.contact-area { 
+	    padding-bottom: 50px;
+	    padding-top: 100px;
+	}
+	.hobbies-area { 
+	    padding: 100px 0;
+	}
+	.hero-area .fixContents:after { 
+	    top: 25%; 
+	}
+
+
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+
+
+.hero-area .fixContents {
+    display: none;
+}
+.hero-area .fixContents.innerBlk {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+.fixContents{
+	display: block;
+	text-align: center;
+}
+.fixContents ul li a {
+    transform: rotate(0deg); 
+}
+.hero-contents {
+    padding-left: 0; 
+    text-align: center;
+} 
+.hero-wrp h1 {
+    font-size: 32px; 
+    margin-bottom: 20px;
+}
+.hero-wrp h3 { 
+    font-size: 22px;
+}
+.hero-contents ul {
+    margin: auto;
+    margin-bottom: 20px;
+    width: max-content;
+    display: block;
+}
+.about-wrp {
+    padding-right: 0px;
+    text-align: center;
+}
+.hero-contents ul li:before{
+	display: none;
+}
+.myimage img {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;
+}
+ul#pills-tab li.nav-item button { 
+    margin-bottom: 15px;
+}
+.skillblk h5 { 
+    font-size: 16px; 
+}
+.fixContents {
+    transform: rotate(0deg);
+    position: unset;
+    left: 0;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.fixContents.right-mode {
+    left: 0;
+    right: 0;
+    transform: rotate(0deg);
+    margin: auto;
+    display: block;
+    width: max-content;
+    margin-bottom: 50px;
+}
+.skils {
+    margin-left: 0px;
+}
+.portfolio {
+    margin-left: 0px;
+}
+.fixContents ul {
+    display: flex;
+    width: max-content;
+    margin-top: 20px;
+}
+.hero-area .fixContents p {
+    margin: auto;
+}
+.fixContents:after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 2px;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.fixContents p:after{
+	display: none;
+}
+.fixContents p { 
+    padding: 5px 10px; 
+    width: 135px; 
+    font-size: 18px;
+    margin-right: 0; 
+}
+ul#pills-tab {
+    justify-content: center;
+}
+.skillblk {
+    width: 100%;  
+    padding: 15px 15px 20px;
+    margin: 10px 0;
+}
+.skillblk span.progs { 
+    height: 5px;
+}
+.hobies{
+	justify-content: space-between;
+}
+.hobie-blk {
+	text-align: center;
+    width: 100%; 
+    padding: 45px 25px;
+    margin: 0px;  
+    margin-bottom: 15px;
+}
+.hobie-blk img { 
+    margin: auto;
+    margin-bottom: 15px;
+}
+.portfolioBlk {
+    width: 100%; 
+    margin-bottom: 30px;  
+}
+.portfolioBlk img { 
+    height: auto; 
+}
+.contact-wrp {
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+.contactLists {
+    text-align: center;
+}
+.contact-area { 
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.hobbies-area { 
+    padding: 100px 0;
+}
+.hero-area .fixContents:after { 
+    top: 25%; 
+}
+.theme-btn {  
+    padding: 8px 20px; 
+}
+.hero-contents ul li { 
+    margin-right: 0; 
+}
+.footer-wrp { 
+    display: block;
+    text-align: center;
+}
+.footer-left { 
+    margin-bottom: 20px;
+}
+.footer-left ul li { 
+    margin-bottom: 10px;
+} 
+footer { 
+    padding: 35px 20px;
+} 
+
+
+
+
+
+
+
+
+ 
+} 
