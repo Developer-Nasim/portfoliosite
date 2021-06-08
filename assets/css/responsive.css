@@ -288,7 +288,7 @@ ul#pills-tab {
     margin: 0px;  
     margin-bottom: 15px;
 }
-.hobie-blk img { 
+.hobie-blk img,.hobie-blk svg { 
     margin: auto;
     margin-bottom: 15px;
 }

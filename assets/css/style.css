@@ -1,14 +1,18 @@
 /*   Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root{
+  --bodyFont: 'Lato', sans-serif;
+  --headingFont: 'Lato', sans-serif;
+  --baseColor: #9370DB;
+  /*--baseColor: #00cf5d;*/
+}
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--bodyFont);
   font-weight: 400;
   background:#111a28;
   color: #fff;
   font-size: 16px; 
-}
-
-  
+} 
 button {
   cursor: pointer; }
 
@@ -38,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif; 
+  font-family: var(--headingFont);
   color: #fff;
   margin-top: 0px; 
   font-weight: 700; 
@@ -96,13 +100,13 @@ li {
     border-radius: 4px;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.85);
-    border-color: #00cf5d;
-    background-color: #00cf5d;
+    border-color: var(--baseColor);
+    background-color: var(--baseColor);
 }
 a.theme-btn.dark{
     margin-left: 15px;
     color: rgba(255, 255, 255, 0.85);
-    border-color: #00cf5d;
+    border-color: var(--baseColor);
     background-color: transparent;
 }
 
@@ -138,8 +142,9 @@ a.theme-btn.dark{
     padding: 5px 15px;
     border-radius: 4px;
 } 
-.logo-area a svg {
+.logo-area a svg,.logo-area a img {
     width: 45px;
+    fill: var(--baseColor)
 }
 .menu-area ul li {
   list-style: none;
@@ -159,7 +164,7 @@ a.theme-btn.dark{
 /* humbergar */
 .bar a {
     width: 38px;
-    background: #00cf5d;
+    background: var(--baseColor);
     height: 35px;
     float: right;
     position: relative;
@@ -220,7 +225,7 @@ a.theme-btn.dark{
 }
 
 .mobile-menu #nav li a:hover { 
-  color: #00cf5d;
+  color: var(--baseColor);
 }
 
 .mobile-menu ul#pills-tab li {
@@ -264,7 +269,7 @@ a.theme-btn.dark{
     top: 30px;
     width: 40px;
     height: 40px;
-    background: #00cf5d;
+    background: var(--baseColor);
     text-align: center;
     line-height: 34px;
     border-radius: 50%;
@@ -301,7 +306,7 @@ a.theme-btn.dark{
 } 
 .hero-wrp span {
     font-size: 22px;
-    color: #00cf5d;
+    color: var(--baseColor);
 }
 
 .hero-wrp h1 {
@@ -311,7 +316,7 @@ a.theme-btn.dark{
 }
 
 .hero-wrp h3 {
-    color: #00cf5d;
+    color: var(--baseColor);
     margin: 0;
 }
 .hero-contents ul {
@@ -329,7 +334,7 @@ a.theme-btn.dark{
     content: "";
     left: -15px;
     top: 10px;
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     width: 8px;
     height: 8px;
     border-radius: 10px;
@@ -473,10 +478,10 @@ a.theme-btn.dark{
 .myskills-area {
     position: relative;
 } 
-ul#pills-tab li.nav-item button {border: 2px solid #00cf5d;color: hsla(0,0%,100%,.85);padding: 5px 25px;margin-right: 15px;cursor: pointer;border-radius: 4px;background: no-repeat;outline: none;transition: .3s;}
+ul#pills-tab li.nav-item button {border: 2px solid var(--baseColor);color: hsla(0,0%,100%,.85);padding: 5px 25px;margin-right: 15px;cursor: pointer;border-radius: 4px;background: no-repeat;outline: none;transition: .3s;}
 
 ul#pills-tab li.nav-item button.active {
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     font-weight: 900;
 }
 .skils{
@@ -508,7 +513,7 @@ ul#pills-tab li.nav-item button.active {
 }
 
 .skillblk h5 span {
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     border-radius: 4px;
     padding: 3px 5px;
     top: 25px;
@@ -519,7 +524,7 @@ ul#pills-tab li.nav-item button.active {
 
 .skillblk  span.progs {
     position: absolute;
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     border-radius: 4px;
     bottom: 0;
     left: 0;
@@ -569,11 +574,12 @@ ul#pills-tab li.nav-item button.active {
 .hobie-blk:first-child{
   margin-left: 0;
 }
-.hobie-blk img {
+.hobie-blk img,.hobie-blk svg {
     max-height: 65px;
     display: block;
     margin-right: auto;
     margin-bottom: 15px;
+    fill: var(--baseColor)
 }
 
 .hobie-blk  h5 {
@@ -760,7 +766,7 @@ footer {
     display: inline-block;
     cursor: pointer;
     margin-left: 10px;
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     padding: 5px 8px;
     border-radius: 4px;
     font-size: 12px;
@@ -769,7 +775,7 @@ footer {
     position: absolute;
     content: "";
     left: 0;
-    background-color: #00cf5d;
+    background-color: var(--baseColor);
     height: 3px;
     width: 100%;
     bottom: 0;

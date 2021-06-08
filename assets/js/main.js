@@ -1,11 +1,13 @@
 (function($) {
   "use strict";
   
- // menu 
+ // Responsive Site bar 
   $('.siteBar-btn').click( function (){ 
     $('.mobile-menu').toggleClass('siteBar');   
   }); 
 
+
+  // Sticky Header
     var zero = 0;
     $(document).ready(function(){
         $(window).on('scroll', function(){
